@@ -50,6 +50,7 @@ public class JSONLogParser implements LogParser {
                         break;
                     case "Antagonist":
                         antagonist = value;
+                        break;
                     case "Konfrontationstyp":
                         konftyp = Konftyp.valueOf(value);
                         break;
