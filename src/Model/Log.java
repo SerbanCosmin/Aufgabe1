@@ -9,8 +9,9 @@ public class Log {
     private Konftyp konftyp;
     private String ort;
     private String datum;
+    private double globeinfluss;
 
-    public Log(int id, String held, String antagonist, Konftyp konftyp, String ort, String datum) {
+    public Log(int id, String held, String antagonist, Konftyp konftyp, String ort, String datum, double globeinfluss) {
         this.id = id;
         this.held = held;
         this.antagonist = antagonist;
@@ -65,6 +66,14 @@ public class Log {
 
     public void setDatum(String datum) {
         this.datum = datum;
+    }
+
+    public double getGlobeinfluss() {
+        return globeinfluss;
+    }
+
+    public void setGlobeinfluss(double globeinfluss) {
+        this.globeinfluss = globeinfluss;
     }
 
     @Override
