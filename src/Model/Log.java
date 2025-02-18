@@ -8,9 +8,9 @@ public class Log {
     private String antagonist;
     private Konftyp konftyp;
     private String ort;
-    private Date datum;
+    private String datum;
 
-    public Log(int id, String held, String antagonist, Konftyp konftyp, String ort, Date datum) {
+    public Log(int id, String held, String antagonist, Konftyp konftyp, String ort, String datum) {
         this.id = id;
         this.held = held;
         this.antagonist = antagonist;
@@ -59,11 +59,11 @@ public class Log {
         this.ort = ort;
     }
 
-    public Date getDatum() {
+    public String getDatum() {
         return datum;
     }
 
-    public void setDatum(Date datum) {
+    public void setDatum(String datum) {
         this.datum = datum;
     }
 
