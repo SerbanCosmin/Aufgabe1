@@ -55,11 +55,11 @@ public class UI {
     /**
      * Handles option to display logs whose names start with a specific letter
      */
-    private void handleLogsByLetter() {
-        System.out.print("Enter a capital letter: ");
-        String letter = scanner.nextLine();
-        controller.getLogsByLetter(letter).forEach(System.out::println);
-    }
+//    private void handleLogsByLetter() {
+//        System.out.print("Enter a capital letter: ");
+//        String letter = scanner.nextLine();
+//        controller.getLogsByLetter(letter).forEach(System.out::println);
+//    }
 
     /**
      * Prints a list of logs

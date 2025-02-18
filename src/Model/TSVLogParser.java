@@ -23,7 +23,7 @@ public class TSVLogParser implements LogParser {
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split("\t");
 
-                if (parts.length == 5) {
+                if (parts.length == 7) {
                     int id = Integer.parseInt(parts[0].trim());
                     String held = parts[1].trim();
                     String antagonist = parts[2].trim();
