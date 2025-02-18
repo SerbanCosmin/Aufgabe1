@@ -30,8 +30,9 @@ public class TSVLogParser implements LogParser {
                     Konftyp konftyp = Konftyp.valueOf(parts[3].trim());
                     String ort = parts[4].trim();
                     String datum = parts[5].trim();
+                    double globeeinfluss = Double.parseDouble(parts[6].trim());
 
-                    logEntries.add(new Log(id, held, antagonist,konftyp, ort, datum));
+                    logEntries.add(new Log(id, held, antagonist,konftyp, ort, datum,globeeinfluss));
                 }
             }
         }
