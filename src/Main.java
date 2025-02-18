@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             LogParser parser = LogParserFactory.getParser("tsv");
-            List<Log> logEntries = parser.parse("C:\\Users\\Mirela\\IdeaProjects\\Aufgabee1\\src\\marvel_konfrontationen.xml");
+            List<Log> logEntries = parser.parse("C:\\Users\\Mirela\\IdeaProjects\\Aufgabee1\\src\\marvel_konfrontationen.tsv");
 
             Controller controller = new Controller(logEntries);
             UI ui = new UI(controller);
